@@ -1,0 +1,176 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color: #222;
+}
+
+   /* Main Application */
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Quote Card */
+
+.quote-card {
+    width: min(650px, 100%);
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+.card-header {
+    margin-bottom: 35px;
+}
+
+.quote-icon {
+    display: block;
+    font-size: 55px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.card-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.card-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+   /* Quote Content */
+
+.quote-content {
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text {
+    font-size: 24px;
+    line-height: 1.6;   
+    font-weight: 500;
+    max-width: 540px;
+}
+
+.author-name {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Loading Message */
+
+.loading-message {
+    display: none;
+    margin-bottom: 15px;
+    color: #667eea;
+    font-size: 14px;
+}
+
+   /* Error Message */
+
+.error-message {
+    min-height: 20px;
+    margin-bottom: 10px;
+    color: #d32f2f;
+    font-size: 14px;
+}
+
+   /* Buttons */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.primary-button {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.primary-button {
+    background: #667eea;
+    color: white;
+}
+.primary-button:hover{
+    transform: translateY(-2px);
+}
+
+   /* Footer */
+
+.footer {
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    text-align: center;
+}
+
+   /* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    .app {
+        padding: 20px 15px;
+    }
+
+    .quote-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .quote-icon {
+        font-size: 45px;
+    }
+
+    .card-header h1 {
+        font-size: 26px;
+    }
+
+    .quote-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .author-name {
+        font-size: 15px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+}

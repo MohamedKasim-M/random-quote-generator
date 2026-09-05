@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Main application  -->
+    <main class="app">
+
+        <section class="quote-card">
+
+            <!-- Header -->
+            <div class="card-header">
+                <span class="quote-icon">❝</span>
+                <h1>Quote Generator</h1>
+                <p>Get inspired with a random quote</p>
+            </div>
+
+            <!-- Quote content -->
+            <div class="quote-content">
+
+                <p id="quoteText" class="quote-text">
+                    Click the button below to get
+                    an inspiring quote.
+                </p>
+
+                <p id="authorName" class="author-name">
+                    — Unknown
+                </p>
+            </div>
+
+            <!-- Loading message -->
+            <p id="loadingMessage" class="loading-message"> ✨ Finding a quote... </p>
+
+            <!-- Error message -->
+            <p id="errorMessage" class="error-message" role="alert"> </p>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <button id="newQuoteButton" class="primary-button" type="button">✨ New Quote </button>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                Task 16.2 | Quote Generator
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
